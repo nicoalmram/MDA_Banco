@@ -1,31 +1,86 @@
-<!DOCTYPE html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Inicio</title>
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link href="bootstrap-5.0.0-beta1-dist/css/carousel.css" rel="stylesheet">
-        <link href="bootstrap-5.0.0-beta1-dist/assets/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="bootstrap-5.0.0-beta1-dist/offcanvas/offcanvas.css" rel="stylesheet">
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" aria-label="Main navigation">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html">Banco Épico</a>
-              <button class="navbar-toggler p-0 border-0" type="button" id="offcanvas" data-bs-toggle="offcanvas" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-      
-              <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link" href="login.html">Iniciar Sesión</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="register.html">Registrarse</a>
-                  </li>
-                </ul>
+<DOCTYPE html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <div class="dropdown">
+          <button class="dropbtn" onclick="myFunction();equis(this)">
+            <div class="container">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+          </button>  
+          <div class="dropdown-content" id="myDropdown">
+            <div class="header">
+              <h2>Mega Menu</h2>
+            </div>
+            <div class="row">
+              <div class="column">
+                <h3>Mi día a día</h3>
+                <a href="retiro.html">Retirar dinero</a>
+                <a href="perfil.html">Cuenta</a>
+                <a href="pretransferencias.html">Realizar una transferencia</a>
+              </div>
+              <div class="column">
+                <h3>Conoce tu banco</h3>
+                <a href="calculadoradivisas.html">Calculadora de divisas</a>
+                <a href="#">Más sobre nosotros</a>
+                <a href="terminosycondiciones.html">Términos y condiciones</a>
               </div>
             </div>
-          </nav>
-    </body>
+          </div>
+        </div> 
+              
+        <div class="login-container">
+          <form action="#">
+            <input type="text" placeholder="Usuario" name="username">
+            <input type="password" placeholder="Contraseña" name="psw">
+            <button type="submit">Iniciar Sesión</button>
+          </form>
+        </div>
+              
+        <a href="registrar.html" style="float: right; color: black; background-color: #E3E3FF; margin-top: 8px;"><i class="fa fa-fw fa-user"></i>Registrarse</a>
+        <!--
+        <div class="logo">
+          <a href="index.html" style="color: black; margin:auto;"><h2>Epic Banco</h2></a>
+        </div>
+        -->
+
+      </div>
+    </nav>
+
+    <h1>Lorem ipsum y eso</h1>
+    <script>
+      function equis(x) {
+        x.classList.toggle("change");
+      }
+      
+      /* When the user clicks on the button,
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown menu if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              penDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+    </script>
+  </body>
 </html>
