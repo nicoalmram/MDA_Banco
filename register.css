@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#customheader{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin: 30px;
+}
+
+#center{
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+}
+
+#center h1{
+    margin-top: 100px;
+    color: #263065;
+    border-top: 5px solid #E3E3FF;
+    border-bottom: 5px solid #E3E3FF;
+}
+
+.container{
+    margin: auto;
+    max-width: 800px;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+
+.form .userdetails{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+.form .userdetails .input-box{
+    border-style:groove;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    width: calc(100% / 2 - 20px);
+}
+
+.form .userdetails .input-box i{
+    position: absolute;
+}
+
+.form .userdetails .input-box .icon{
+    padding: 15px;
+    min-width: 40px;
+    color: #999;
+}
+
+.form .userdetails .input-box input{
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding-left: 40px;
+}
+
+.input-box small{
+    position:absolute;
+    visibility: hidden;
+    color: #e74c3c;
+    font-style: normal;
+    display: block;
+}
+.input-box.success{
+    border:2px solid rgb(26, 167, 26);
+}
+.input-box.error{
+    border: 2px solid rgb(228, 29, 22);
+}
+
+.form .check-box{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form .button{
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background-color: #263065;
+
+    margin: 0 auto;
+    display: block;
+}
+
+.form p{
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media(max-width: 584px){
+    .container{
+        max-width: 100%;
+    }
+    #customheader{
+        flex-direction: column;
+    }
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #center{
+        margin-left: 20px;
+    }
+    .container{
+        max-width: 100%;
+    }
+    .form .userdetails{
+        max-height: 100%;
+    }
+    .form .userdetails .input-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+}
+

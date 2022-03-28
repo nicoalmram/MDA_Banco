@@ -31,10 +31,11 @@
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-  background-color: #3c54cc;
+  background-color: #E3E3FF;
 }
 
 .dropdown-content {
+  margin-left: 8px;
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -45,7 +46,7 @@
 }
 
 .dropdown-content .header {
-  background: #3c54cc;
+  background: #E3E3FF;
   padding: 16px;
   color: white;
 }
