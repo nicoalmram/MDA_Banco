@@ -6,8 +6,17 @@
     <link rel="stylesheet" href="estilo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-  <body>
-    <nav>
+  <html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Inicio Banco</title>
+    <link rel="stylesheet" href="./assets/estilos.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+<body>
+
+<nav>
       <div class="navbar">
         <div class="dropdown">
           <button class="dropbtn" onclick="myFunction();equis(this)">
@@ -19,7 +28,7 @@
           </button>  
           <div class="dropdown-content" id="myDropdown">
             <div class="header">
-              <h2>Mega Menu</h2>
+              <h2 style="color: black;">Menú</h2>
             </div>
             <div class="row">
               <div class="column">
@@ -46,7 +55,7 @@
           </form>
         </div>
               
-        <a href="registrar.html" style="float: right; color: black; background-color: #E3E3FF; margin-top: 8px;"><i class="fa fa-fw fa-user"></i>Registrarse</a>
+        <a href="register.html" style="float: right; color: black; background-color: #E3E3FF; margin-top: 8px;"><i class="fa fa-fw fa-user"></i>Registrarse</a>
         <!--
         <div class="logo">
           <a href="index.html" style="color: black; margin:auto;"><h2>Epic Banco</h2></a>
@@ -56,8 +65,60 @@
       </div>
     </nav>
 
-    <h1>Lorem ipsum y eso</h1>
-    <script>
+<section id="slider">
+
+  <div id="tm-video-container">
+    <video autoplay="" muted="" loop="" id="tm-video" style="width: 1203px; height: 676.688px; margin-left: 0px; margin-top: 0px;">
+            <source src="assets/wheat-field.mp4" type="video/mp4">
+    </video>    
+  </div>
+</section>
+
+
+<section id="articulos">
+    <div class="imagen_Texto_izquierda">
+      <img src="assets/img/1.jpg">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <div class="imagen_Texto_derecha">
+      <img src="assets/img/1.jpg">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <div class="doble_magen">
+      <img src="assets/img/5.jpg">
+      <img src="assets/img/6.jpg">
+    </div>
+
+</section>
+
+  <!-- Footer -->
+<footer>
+      <div id="redes_sociales_footer">
+        <img src="img/youtube.png">
+        <img src="img/facebook.png">
+        <img src="img/linkedin.png">
+      </div>
+      <div class="texto_centrado">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+</footer>
+
+<script>
+function abrir_menu() {
+  document.getElementById("menu").style.display = "block";
+  document.documentElement.style.setProperty('--animate-duration', '.5s');
+}
+ 
+function cerrar_menu() {
+  document.getElementById("menu").style.display = "none";
+
+}
+</script>
+<script>
       function equis(x) {
         x.classList.toggle("change");
       }
@@ -82,5 +143,5 @@
         }
       }
     </script>
-  </body>
+</body>
 </html>

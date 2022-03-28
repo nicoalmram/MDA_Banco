@@ -1,77 +1,139 @@
-<DOCTYPE html>
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <title>Inicio</title>
-      <link rel="stylesheet" href="estilo.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <body>
-      <nav>
-        <div class="navbar">
-          <div class="dropdown">
-            <button class="dropbtn" onclick="myFunction();equis(this)">
-              <div class="container">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Inicio Banco</title>
+    <link rel="stylesheet" href="./assets/estilos.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+<body>
+
+<nav>
+      <div class="navbar">
+        <div class="dropdown">
+          <button class="dropbtn" onclick="myFunction();equis(this)">
+            <div class="container">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+          </button>  
+          <div class="dropdown-content" id="myDropdown">
+            <div class="header">
+              <h2 style="color: black;">Menú</h2>
+            </div>
+            <div class="row">
+              <div class="column">
+                <h3>Mi día a día</h3>
+                <a href="retiro.html">Retirar dinero</a>
+                <a href="perfil.html">Cuenta</a>
+                <a href="pretransferencias.html">Realizar una transferencia</a>
               </div>
-            </button>  
-            <div class="dropdown-content" id="myDropdown">
-              <div class="header">
-                <h2>Mega Menu</h2>
-              </div>
-              <div class="row">
-                <div class="column">
-                  <h3>Mi día a día</h3>
-                  <a href="retiro.html">Retirar dinero</a>
-                  <a href="perfil.html">Cuenta</a>
-                  <a href="pretransferencias.html">Realizar una transferencia</a>
-                </div>
-                <div class="column">
-                  <h3>Conoce tu banco</h3>
-                  <a href="calculadoradivisas.html">Calculadora de divisas</a>
-                  <a href="#">Más sobre nosotros</a>
-                  <a href="terminosycondiciones.html">Términos y condiciones</a>
-                </div>
+              <div class="column">
+                <h3>Conoce tu banco</h3>
+                <a href="calculadoradivisas.html">Calculadora de divisas</a>
+                <a href="#">Más sobre nosotros</a>
+                <a href="terminosycondiciones.html">Términos y condiciones</a>
               </div>
             </div>
-          </div> 
-                
-          <!--
-          <div class="logo">
-            <a href="index.html" style="color: black; margin:auto;"><h2>Epic Banco</h2></a>
           </div>
-          -->
-  
+        </div> 
+              
+        <div class="login-container">
+          <form action="index2.html">
+            <input type="text" placeholder="Usuario" name="username">
+            <input type="password" placeholder="Contraseña" name="psw">
+            <button type="submit">Iniciar Sesión</button>
+          </form>
         </div>
-      </nav>
-  
-      <h1>Lorem ipsum y eso</h1>
-      <script>
-        function equis(x) {
-          x.classList.toggle("change");
-        }
-        
-        /* When the user clicks on the button,
-        toggle between hiding and showing the dropdown content */
-        function myFunction() {
-          document.getElementById("myDropdown").classList.toggle("show");
-        }
-  
-        // Close the dropdown menu if the user clicks outside of it
-        window.onclick = function(event) {
-          if (!event.target.matches('.dropbtn')) {
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-              var openDropdown = dropdowns[i];
-              if (openDropdown.classList.contains('show')) {
-                penDropdown.classList.remove('show');
-              }
+              
+        <a href="register.html" style="float: right; color: black; background-color: #E3E3FF; margin-top: 8px;"><i class="fa fa-fw fa-user"></i>Registrarse</a>
+        <!--
+        <div class="logo">
+          <a href="index.html" style="color: black; margin:auto;"><h2>Epic Banco</h2></a>
+        </div>
+        -->
+
+      </div>
+    </nav>
+
+<section id="slider">
+
+  <div id="tm-video-container">
+    <video autoplay="" muted="" loop="" id="tm-video" style="width: 1203px; height: 676.688px; margin-left: 0px; margin-top: 0px;">
+            <source src="assets/wheat-field.mp4" type="video/mp4">
+    </video>    
+  </div>
+</section>
+
+
+<section id="articulos">
+    <div class="imagen_Texto_izquierda">
+      <img src="assets/img/1.jpg">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <div class="imagen_Texto_derecha">
+      <img src="assets/img/1.jpg">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <div class="doble_magen">
+      <img src="assets/img/5.jpg">
+      <img src="assets/img/6.jpg">
+    </div>
+
+</section>
+
+  <!-- Footer -->
+<footer>
+      <div id="redes_sociales_footer">
+        <img src="img/youtube.png">
+        <img src="img/facebook.png">
+        <img src="img/linkedin.png">
+      </div>
+      <div class="texto_centrado">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inci.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+</footer>
+
+<script>
+function abrir_menu() {
+  document.getElementById("menu").style.display = "block";
+  document.documentElement.style.setProperty('--animate-duration', '.5s');
+}
+ 
+function cerrar_menu() {
+  document.getElementById("menu").style.display = "none";
+
+}
+</script>
+<script>
+      function equis(x) {
+        x.classList.toggle("change");
+      }
+      
+      /* When the user clicks on the button,
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown menu if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              penDropdown.classList.remove('show');
             }
           }
         }
-      </script>
-    </body>
-  </html>
+      }
+    </script>
+</body>
+</html>
