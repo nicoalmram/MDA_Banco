@@ -3,17 +3,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
 }
 
 body{
     height: 100vh;
     justify-content: center;
     align-items: center;
-    padding: 10px;
 }
 
 #customheader{
+
+    font-family: 'Poppins',sans-serif;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -41,7 +41,8 @@ img{
 }
 
 .container{
-    margin: auto;
+    font-family: 'Poppins',sans-serif;
+    margin: auto auto 5vw auto;
     max-width: 800px;
     width: 100%;
     background-color: #fff;
@@ -149,4 +150,3 @@ img{
         width: 100%;
     }
 }
-

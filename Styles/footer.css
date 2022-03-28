@@ -28,7 +28,6 @@
         display: inline-grid;
         margin: auto auto auto 40%;
         grid-template-columns: repeat(10, 3rem);
-        grid-auto-rows: 5rem;
 
     }
 
