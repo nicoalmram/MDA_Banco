@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="C:\Users\User\Documents\GitHub\MDA_Banco\public\css\register.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div id="customheader">
+    <div id="left"><img src="C:\Users\User\Documents\GitHub\MDA_Banco\public\images\logo.png" alt="logo" class="logo"></div>
+    <div id="center"><h1>REGISTRATE</h1><br>Hazte cliente de nuestro banco ahora</div>
+    <div id="right"><img src="C:\Users\User\Documents\GitHub\MDA_Banco\public\images\ukraine.png" alt="donation" class="donation"></div>
+</div>
+
+<div class="container">
+    <form class ="form" id="form" method="get" action="register.php">
+
+        <div class="userdetails">
+            <div class="input-box">
+                <i class="fas fa-user icon"></i>
+                <input type="text" name="Name" id="Name" placeholder="Nombre y apellidos" required>
+                <small>mensaje</small>
+            </div>
+            <div class="input-box">
+                <i class="fas fa-user icon"></i>
+                <input type="text" name="IDnum" id="IDnum" placeholder="DNI/NIF/NIE" required>
+                <small>mensaje</small>
+            </div>
+            <div class="input-box">
+                <i class="fas fa-envelope-square icon"></i>
+                <input type="text" name="Email" id="Email" placeholder="Correo electronico" required>
+                <small>mensaje</small>
+            </div>
+            <div class="input-box">
+                <i class="fas fa-phone-square-alt icon"></i>
+                <input type="text" name="Phone" id="Phone" placeholder="Numero de contacto" required>
+                <small>mensaje</small>
+            </div>
+            <div class="input-box">
+                <i class="fa-solid fa-house icon"></i>
+                <input type="text" name="Address" id="Address" placeholder="Domicilio" required>
+                <small>mensaje</small>
+            </div>
+            <div class="input-box">
+                <i class="fa-solid fa-house icon"></i>
+                <input type="text" name="Zipcode" id="Zipcode" placeholder="Código postal" required>
+                <small>mensaje</small>
+            </div>
+            <div class="input-box">
+                <i class="fas fa-lock icon"></i>
+                <input type="Password" name="Pass" id="Pass" placeholder="Contraseña" required>
+                <small>mensaje</small>
+            </div>
+            <div class="input-box">
+                <i class="fas fa-lock icon"></i>
+                <input type="Password" name="Pass" id="Pass2" placeholder="Repetir contraseña" required>
+                <small>mensaje</small>
+            </div>
+        </div>
+        <div class="check-box">
+            <input type="checkbox" id="accept" name="accept" value="confirm" required>
+            <label for="accept"> He leido y acepto <a href="index.html">los términos y condiciones de uso</a></label>
+        </div>
+
+        <button type="button" class="button" onclick="location.href='index2.html';">CREAR</button>
+        <p>¿Ya tienes una cuenta? <a href="index.html">Inicia sesion</a></p>
+    </form>
+</div>
+</body>
+<script src="js/regvalidation.js"></script>
+</html>
