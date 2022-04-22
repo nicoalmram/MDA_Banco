@@ -4,7 +4,8 @@
 .footer{
     background-color: #E3E3FF;
     width: 100%;
-    margin-bottom: 0;
+    position:absolute;
+    bottom:0;
     height: auto;
     font-family: 'Oswald', sans-serif;
     display: inline-grid;
@@ -13,9 +14,9 @@
     overflow: hidden;
     justify-content: center;
     align-items: center;
-    alignment: center;
+    
 }
-.img{
+.footer-img{
     width: 100%;
     height: auto;
     display: block;
