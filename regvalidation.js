@@ -1,3 +1,5 @@
+const nodeMysql = require("node-mysql");
+
 //lista de regex para la validacion de los datos de entrada
 const fullname = /^(?:[A-ZÁÉÍÓÚa-zñáéíóú]{2,15} ?\b){3,4}$/;
 const emailreg = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
@@ -129,4 +131,8 @@ function onError(input,message){
     parent.classList.add("error");
     parent.classList.remove("success");
 
+}
+
+function registro(){
+    MySQL.Async.insert('INSERT INTO account (id, iban, name, balance) VALUES (1,1,1,1)');
 }
