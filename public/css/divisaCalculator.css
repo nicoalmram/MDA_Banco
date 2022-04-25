@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+#customheader{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.container{
+    margin: auto;
+    max-width: 800px;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+.divisa-img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin: 30px;
+}
+#center{
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+}
+
+#center h1{
+    margin-top: 100px;
+    color: #263065;
+    border-top: 5px solid #E3E3FF;
+    border-bottom: 5px solid #E3E3FF;
+}
+.divisaDetails{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+.divisaDetails .input-box{
+    border-style:groove;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    width: calc(100% / 2 - 20px);
+}
+
+
+.divisaDetails .input-box .icon{
+    padding: 15px;
+    min-width: 40px;
+    color: #999;
+}
+
+.divisaDetails .input-box input{
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding-left: 40px;
+}
+.select-box{
+    width: auto;
+}
+.button{
+    height: 40px;
+    width: auto;
+    padding: 0 5px 0 5px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background-color: #263065;
+    margin: 0 auto;
+    display: block;
+}
+.footer{
+    margin-top: 50px;
+}

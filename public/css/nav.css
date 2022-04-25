@@ -15,7 +15,7 @@
     font-size: 16px;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+
     text-decoration: none;
   }
   
@@ -76,6 +76,19 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+.logo-container{
+    margin-left: 45%;
+    padding: 5px;
+    height: 60px;
+    overflow: hidden;
+    align-items: center;
+    width: auto;
+    vertical-align: middle;
+}
+.logo{
+  width: auto;
+  height: 100%;
 }
 .column {
     float: left;
@@ -160,6 +173,7 @@
   }
 
   a.register-button{
+    padding: 14px 16px;
       float: right;
       color: black;
       margin-top: 8px;
