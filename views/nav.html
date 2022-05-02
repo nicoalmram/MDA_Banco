@@ -39,10 +39,10 @@
             </div>
           </div>     
           <div class="login-container">
-            <form action="index2.html">
-              <input type="text" placeholder="Usuario" name="username">
+            <form method="post" action="../public/php/user_login.php">
+              <input type="text" placeholder="DNI" name="idnum">
               <input type="password" placeholder="Contraseña" name="psw">
-              <button type="submit">Iniciar Sesión</button>
+                <input type="submit" class="login-btn" name="login-btn"/><br>
             </form>
           </div>
           <a href="./index.html" class="logo-container">
