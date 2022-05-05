@@ -4,6 +4,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 .navbar {
+    z-index: 3;
     overflow: hidden;
     background: #E3E3FF;  
     width: 100%;

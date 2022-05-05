@@ -1,12 +1,21 @@
 /* Slideshow container */
 body{
   width:100%;
+  overflow-x: hidden;
+  background-color: #9191a2;
+  
 }
+#body-container{
+  width:80%;
+  margin:auto;
+  background-color: #f9f9fe;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .slideshow-container {
-  width: 40%;
-  z-index: 1;
-  position: relative;
-  margin: 3em auto auto auto;
+  width: 75%;
+  margin: auto auto auto auto;
 }
 
 /* Hide the images by default */
@@ -15,10 +24,8 @@ body{
 }
 
 section {
-  margin: 1em auto;
-  padding: 1em;
-  width: 90%;
-  display: block;
+  width: 80%;
+  margin: auto 10% auto 10%;
 }
 
 .imagen_Texto_izquierda {
@@ -55,55 +62,51 @@ section {
 .texto_centrado {
   text-align: center;
 }
-
-
+#buttons{
+  margin: -3%;
+}
 /* Next & previous buttons */
 .prev, .next {
+  display: inline;
   cursor: pointer;
-  position: absolute;
-  top: 50%;
   width: auto;
-  margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: #8383ff;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius: 3px 0 0 3px ;
   user-select: none;
 }
 
-
 /* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+  border-radius: 0 3px 3px 0;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: #1c1c00;
 }
-
+.mySlides:hover .text{
+  background-color: #070700;
+  opacity: 0.8;
+  visibility: visible;
+}
 /* Caption text */
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
+  visibility: hidden;
   width: 100%;
-  text-align: center;
+  padding: 0 10% 0 10%;
+  position: relative;
+  margin: auto;
+  color: white;
+  transform: translate(0%, -100%);
+  font-size: 1vw;
+  text-align: justify;
+  transition: background-color 0.8s;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
 
 /* The dots/bullets/indicators */
 .dot {
@@ -111,14 +114,21 @@ section {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #dfdfff;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+  transition: border 0.6s ease;
+  border: #1c1c00 solid 1px;
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+.active {
+  background-color: #8383ff;
+  border: #1c1c00 solid 1px;
+}
+.dot:hover{
+  border: #8383ff solid 1px;
+  background-color: #8383ff;
 }
 
 /* Fading animation */
@@ -142,6 +152,7 @@ section {
 }
 
 .banner img {
-  height: 20em;
-  width: 75em;
+  height: auto;
+  width: 80%;
+  margin: auto 10% auto 10%;
 }
