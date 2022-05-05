@@ -3,7 +3,8 @@ body{
   width:100%;
 }
 .slideshow-container {
-  max-width: 1000px;
+  width: 40%;
+  z-index: 1;
   position: relative;
   margin: 3em auto auto auto;
 }
@@ -12,6 +13,49 @@ body{
 .mySlides {
   display: none;
 }
+
+section {
+  margin: 1em auto;
+  padding: 1em;
+  width: 90%;
+  display: block;
+}
+
+.imagen_Texto_izquierda {
+  float: left;
+  display: block;
+  clear: both;
+  margin-bottom: 6em;
+  width: 80%;
+}
+.imagen_Texto_izquierda img {
+  float: left;
+  display: block;
+  max-height: 150px;
+  min-width: 300px;
+  padding-right: 30px;
+}
+
+.imagen_Texto_derecha {
+  float: right;
+  display: block;
+  clear: both;
+  margin-bottom: 4em;
+  width: 80%;
+}
+
+.imagen_Texto_derecha img {
+  float: right;
+  display: block;
+  max-height: 150px;
+  min-width: 300px;
+  padding-left: 30px;
+}
+
+.texto_centrado {
+  text-align: center;
+}
+
 
 /* Next & previous buttons */
 .prev, .next {
@@ -28,6 +72,7 @@ body{
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
+
 
 /* Position the "next button" to the right */
 .next {
