@@ -27,7 +27,7 @@
     </div>
 
     <div class="container">
-        <form class ="form" id="form" method="get" action="register.php">
+        <form class ="form" id="form" method="post" action="../public/php/user_reg.php">
 
             <div class="userdetails">
                 <div class="input-box">
@@ -67,17 +67,17 @@
                 </div>
                 <div class="input-box">
                     <i class="fas fa-lock icon"></i>
-                    <input type="Password" name="Pass" id="Pass2" placeholder="Repetir contraseña" required>
+                    <input type="Password" name="Pass2" id="Pass2" placeholder="Repetir contraseña" required>
                     <small>mensaje</small>
                 </div>
             </div>
             <div class="check-box">
                 <input type="checkbox" id="accept" name="accept" value="confirm" required>
-                <label for="accept"> He leido y acepto <a href="index.html">los términos y condiciones de uso</a></label>
+                <label for="accept"> He leido y acepto <a href="../views/index.html">los términos y condiciones de uso</a></label>
             </div>
 
-            <button type="button" class="button" onclick="location.href='index2.html';">CREAR</button>
-            <p>¿Ya tienes una cuenta? <a href="index.html">Inicia sesion</a></p>
+            <input type="submit" class="button" name="cnfrm-submit"/>
+            <p>¿Ya tienes una cuenta? <a href="../views/index.html">Inicia sesion</a></p>
         </form>
     </div>
     </body>
