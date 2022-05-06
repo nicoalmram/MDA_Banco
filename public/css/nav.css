@@ -79,7 +79,7 @@
     margin-right: auto;
 }
 .logo-container{
-    margin-left: 45%;
+    margin: auto auto auto 25rem;
     padding: 5px;
     height: 60px;
     overflow: hidden;
@@ -166,21 +166,39 @@
     -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
     transform: rotate(45deg) translate(-8px, -8px) ;
   }
-  
-  .login-container {
+  #logged-in{
+    visibility: visible ;
+    display: block;
+  }
+  #logged-out{
+    visibility: hidden;
+    display: none;
+  }
+  .login-container{
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
     float: right;
-    position: relative;
-    margin: 20px 20px auto 20px;
+    margin-right: 3rem;
   }
-
+  .actualUser{
+    float: left;
+    margin-right: 1rem;
+    margin-top: 2px;
+  }
+  .login-btn{
+    border: solid black 1px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #263065;
+    border-radius: 3px;
+  }
   a.register-button{
-    padding: 14px 16px;
-      float: right;
-      color: black;
-      margin-top: 8px;
-  }
-  a.register-button:hover{
-    font-weight: bold;
+    color: black;    
+    cursor: pointer;
+    margin-top: 2px;
+    margin-right: 1rem;
   }
   /*
   .logo {

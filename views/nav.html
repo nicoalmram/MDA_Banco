@@ -37,17 +37,27 @@
                 </div>
               </div>
             </div>
-          </div>     
-          <div class="login-container">
+          </div>
+          <div class="login-container" id="logged-in">
+            <!--Obtener el usuario desde la base de datos y mostrarlo aquí ¿PHP?-->
+            <form class="actualUser" >
+              <label>Sesión iniciada como: </label>
+              <label>$USUARIO</label>
+            </form>
+            <a href="./register.html" class="register-button"><i class="fa fa-fw fa-user"></i>Cerrar Sesión</a>
+          </div>
+          <div class="login-container" id="logged-out">
             <form method="post" action="../public/php/user_login.php">
               <input type="text" placeholder="DNI" name="idnum">
               <input type="password" placeholder="Contraseña" name="psw">
-                <input type="submit" class="login-btn" name="login-btn"/><br>
+              <input type="submit" class="login-btn" name="login-btn"/>
+              <a href="./register.html" class="register-button"><i class="fa fa-fw fa-user"></i>Registrarse</a>
             </form>
           </div>
           <a href="./index.html" class="logo-container">
-            <img src="../public/images/bankLogo.png" alt="logo" class="logo-nav"></a>
-          <a href="./register.html" class="register-button"><i class="fa fa-fw fa-user"></i>Registrarse</a>
+          <img src="../public/images/bankLogo.png" alt="logo" class="logo-nav"></a>
         </div>
       </nav>
+      <button onclick="logIn()">logIn</button>
+      <button onclick="logOut()">logOut</button>
       <script src="../public/js/nav.js"></script>

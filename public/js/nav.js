@@ -17,3 +17,15 @@ window.onclick = function(event) {
     }
   }
 }
+function logOut(){
+  document.getElementById("logged-in").style.visibility = "visible";
+  document.getElementById("logged-in").style.display = "block";
+  document.getElementById("logged-out").style.visibility = "hidden";
+  document.getElementById("logged-out").style.display = "none";
+}
+function logIn(){
+  document.getElementById("logged-out").style.visibility = "visible";
+  document.getElementById("logged-out").style.display = "block";
+  document.getElementById("logged-in").style.visibility = "hidden";
+  document.getElementById("logged-in").style.display = "none";
+}
