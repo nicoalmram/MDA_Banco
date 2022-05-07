@@ -10,7 +10,6 @@ include 'user_profile_header.php';
 
 
 <?php
-    session_start();
     include 'db_connect.php';
 
     $id=$_SESSION['idnum'];
@@ -31,11 +30,11 @@ include 'user_profile_header.php';
         <label>Nombre completo : <?php echo $_SESSION['fullname']; ?></label>
         <label>Correo : <?php echo $_SESSION['email']; ?></label>
         <label>Núm Telefono : <?php echo $phone; ?></label>
-        <label>Saldo disponible : €<?php echo $balance ; ?></label>
+        <label>Saldo disponible : <?php echo $balance ; ?>€</label>
     </div>
 
     <div class="statement">
-        <label class="heading">Bank Statement</label>
+        <label class="heading">Detalle de los Movimientos</label>
         <table>
             <th width="5%">#ID</th>
             <th width="15%">Fecha</th>
@@ -45,7 +44,7 @@ include 'user_profile_header.php';
             <th width="20%">Total</th>
             <?php
 
-            $cust_id = 'X1234567Y';
+            $cust_id = $_SESSION['idnum'];
 
             $sql = "SELECT * from transactions ORDER By id DESC LIMIT 10";
             $result = $conn->query($sql);
