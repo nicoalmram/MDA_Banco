@@ -1,4 +1,5 @@
 <?php
+
 include 'user_profile_header.php';
 ?>
 
@@ -34,7 +35,7 @@ include 'user_profile_header.php';
     </div>
 
     <div class="statement">
-        <label class="heading">Detalle de los Movimientos</label>
+        <label class="heading">Movimientos de la cuenta</label>
         <table>
             <th width="5%">#ID</th>
             <th width="15%">Fecha</th>

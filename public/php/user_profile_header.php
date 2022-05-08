@@ -44,18 +44,18 @@ session_start();
              <div class="welcome">
 
              <label>Bienvenido <?php echo $_SESSION['fullname']; ?></label></div>
-            <a class="cust_home" href="../../views/index2.html"><input type="button" name="home" value="Inicio" id="home"></a>
+            <a class="cust_home" href="user_profile.php"><input type="button" name="home" value="Inicio" id="home"></a>
             <a class="cust_logout" href="user_logout.php"><input type="button" name="logout_btn" value="Cerrar" id="logout"></a>
 
         </div>
 
         <div class="profile_nav">
         <ul>
-            <a href=""><li class="link1">Mi cuenta</li></a>
-            <a href=""><li class="link2">Modificar perfil</li></a>
-            <a href=""><li class="link3">Cambiar contraseña</li></a>
+            <a href="user_detail.php"><li class="link1">Mi cuenta</li></a>
+            <a href=""><li class="link2">Mi perfil</li></a>
+            <a href="user_pass.php"><li class="link3">Cambiar contraseña</li></a>
             <a href=""><li class="link4">Hacer transferencia</li></a>
-            <a href=""><li class="link5">Historial completa</li></a>
+            <a href=""><li class="link5">Historial completo</li></a>
             </ul>
         </div>
 

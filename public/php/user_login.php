@@ -32,6 +32,7 @@ if(isset($_POST['login-btn'])){
         $_SESSION['phone'] = $row['phone'];
         $_SESSION['address'] = $row['address'];
         $_SESSION['zipcode'] = $row['zipcode'];
+        $_SESSION['pwd'] = $row['pwd'];
         $_SESSION['balance'] = $row['balance'];
 
         header('location:user_profile.php');
