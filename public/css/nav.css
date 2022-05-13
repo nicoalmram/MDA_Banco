@@ -166,7 +166,14 @@
     -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
     transform: rotate(45deg) translate(-8px, -8px) ;
   }
-
+  #logged-in{
+    visibility: visible ;
+    display: block;
+  }
+  #logged-out{
+    visibility: hidden;
+    display: none;
+  }
   .login-container{
     justify-content: center;
     align-items: center;

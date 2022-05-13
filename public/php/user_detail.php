@@ -17,7 +17,11 @@ include 'db_connect.php';
 $sql="SELECT * FROM users where idnum= '$cust_id' ";
 $result = $conn->query($sql);
 $row = $result->fetch_assoc();
-$current_bal = $row['balance'];
+$name = $row['fullname'];
+$sql2="SELECT balance FROM account where users_name= '$name' ";
+$result2 = $conn->query($sql2);
+$row2 = $result2->fetch_assoc();
+$current_bal = $row2['balance'];
 
 ?>
 
