@@ -88,14 +88,12 @@ section {
 .prev:hover, .next:hover {
   background-color: #1c1c00;
 }
-.mySlides:hover .text{
-  background-color: #070700;
-  opacity: 0.8;
-  visibility: visible;
-}
+
 /* Caption text */
 .text {
-  visibility: hidden;
+  background-color: #070700;
+  opacity: 0.8;
+
   width: 100%;
   padding: 0 10% 0 10%;
   position: relative;
