@@ -17,21 +17,37 @@ include 'user_profile_header.php';
     $sql="SELECT * FROM users where idnum= '$id' ";
     $result = $conn->query($sql);
     $row = $result->fetch_assoc();
+    $name = $row['fullname'];
+    $sql2="SELECT * FROM account where users_name= '$name' ";
+    $result2 = $conn->query($sql2);
+    $row2 = $result2->fetch_assoc();
 
     $phone = $row['phone'];
-    $balance = $row['balance'];
-
+    $balance = $row2['balance'];
+    $res = $conn->query($sql2);
 
 ?>
 
 <div class="cust_profile_container">
     <div class="acc_details">
         <span class="heading">Detalles de la cuenta</span><br>
+        <select id="target">
+
+            <?php while($row2 = mysqli_fetch_array($res)):;?>
+            <?php $cuenta = $row2['name'];
+            $id_cuenta = $row2['ID'];
+            ?>
+
+            <?php echo "<option id='$id_cuenta'> $cuenta</option>";?>
+
+            <?php endwhile;?>
+
+        </select>
         <label>Núm de Identificación : <?php echo $_SESSION['idnum']; ?></label>
         <label>Nombre completo : <?php echo $_SESSION['fullname']; ?></label>
         <label>Correo : <?php echo $_SESSION['email']; ?></label>
         <label>Núm Telefono : <?php echo $phone; ?></label>
-        <label>Saldo disponible : <?php echo $balance ; ?>€</label>
+        <label id="balance">Saldo disponible : <?php echo $balance; ?> €</label>
     </div>
 
     <div class="statement">
@@ -72,6 +88,18 @@ include 'user_profile_header.php';
         </table>
     </div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../js/accounts.js"></script>
+<script>
+
+
+    function myFunction(){
+        var address = $('#name').find(':selected').data('add');
+        var contact = $('#name').find(':selected').data('con');
+        $('#add').val(address);
+        $('#con').val(contact);
+    }
+</script>
 
 </body>
 </html>

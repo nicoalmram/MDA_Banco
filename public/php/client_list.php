@@ -16,6 +16,7 @@ include 'db_connect.php';
     <table border="1px" cellpadding="10">
         <th>#</th>
         <th>Nombre completo</th>
+        <th>Nombre de la cuenta</th>
         <th>DNI</th>
         <th>Correo</th>
         <th>Num. contacto</th>
@@ -26,29 +27,31 @@ include 'db_connect.php';
 
         <?php
 
-        $sql = "SELECT * from users";
+        $sql = "SELECT st.*,sr.* from users st, account sr WHERE st.fullname=sr.users_name";
         $result = $conn->query($sql);
 
-        if ($result->num_rows > 0) {
+        //if ($result->num_rows > 0) {
             $Sl_no = 1;
             // output data of each row
-            while($row = $result->fetch_assoc()) {
+            while($row = mysqli_fetch_assoc($result)) {
 
-                echo '
-			<tr>
-			<td>'.$Sl_no++.'</td>
-			<td>'.$row['fullname'].'</td>
-			<td>'.$row['idnum'].'</td>
-			<td>'.$row['email'].'</td>
-			<td>'.$row['phone'].'</td>
-			<td>'.$row['address'].'</td>
-			<td>'.$row['zipcode'].'</td>
-			<td>'.$row['pwd'].'</td>
-			<td>'.$row['balance'].'€</td>
-			</tr>';
+                ?>
+                <tr>
+                <td><?php echo $Sl_no++?></td>
+                <td><?php echo $row['fullname']?></td>
+                <td><?php echo $row['name']?></td>
+                <td><?php echo $row['idnum']?></td>
+                <td><?php echo $row['email']?></td>
+                <td><?php echo $row['phone']?></td>
+                <td><?php echo $row['address']?></td>
+                <td><?php echo $row['zipcode']?></td>
+                <td><?php echo $row['pwd']?></td>
+                <td><?php echo $row['balance']?> €</td>
+                </tr>';
+            <?php
             }
 
-        }
+        //}
 
         ?>
 

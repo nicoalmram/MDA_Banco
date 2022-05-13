@@ -76,7 +76,7 @@ session_start();
                           </div>
                           <h3 style="display:inline-block; white-space:nowrap;">Conoce tu banco</h3>
                       </lu>
-                  <a href="divisaCalculator.html">Calculadora de divisas</a>
+                  <a href="../../views/divisaCalculator.html">Calculadora de divisas</a>
                   <a href="#">Más sobre nosotros</a>
                   <a href="terminosycondiciones.html">Términos y condiciones</a>
                 </div>
