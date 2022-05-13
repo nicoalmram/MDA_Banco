@@ -45,7 +45,10 @@ session_start();
              <div class="welcome">
 
              <label>Bienvenido <?php echo $_SESSION['fullname']; ?></label>
+             <a href="../../views/index.html" class="logo-container">
+              <img src="../images/bankLogo.png" alt="logo" class="logo-nav"></a>
              <div class="dropdown">
+             
             <button class="dropbtn" onclick="myFunction();equis(this)">
               <div class="nav-container">
                 <div class="bar1"></div>
@@ -96,6 +99,7 @@ session_start();
             <a href=""><li class="link5">Historial completo</li></a>
             </ul>
         </div>
+        
           <script src="../js/nav.js"></script>
     </body>
     

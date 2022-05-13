@@ -70,7 +70,7 @@ body{
 .dropdown {
     float: right;
     overflow: hidden;
-    margin-top: -1.5%;
+    margin-top: -1.5rem;
   }
   
   .dropdown .dropbtn {
@@ -199,3 +199,14 @@ body{
     cursor: pointer;
   }
   * {box-sizing:border-box}
+  .logo-container{
+    overflow: hidden;
+    align-items: center;
+    width: auto;
+    margin: auto auto auto 25rem;
+    vertical-align: middle;
+}
+.logo-nav{
+  width: auto;
+  height: 3rem;
+}

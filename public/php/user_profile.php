@@ -1,7 +1,4 @@
-<?php
 
-include 'user_profile_header.php';
-?>
 
 <html>
 <head><title>Mi perfil</title>
@@ -9,7 +6,10 @@ include 'user_profile_header.php';
 </head>
 <body>
 
+<?php
 
+include 'user_profile_header.php'
+?>
 <?php
     include 'db_connect.php';
 
