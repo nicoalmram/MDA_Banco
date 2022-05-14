@@ -17,7 +17,7 @@ function llamada(data){
           success: function(e)
           {
 
-              jQuery('#balance').html(e);
+            jQuery('#balance').html(e);
               
 
           }, 

@@ -1,9 +1,13 @@
 *{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
+body{
+  overflow-x: hidden;
 
+  margin: 0;
+}
 .customer_details {
     margin: 20px 20px;
     float: left;
@@ -93,7 +97,8 @@
     height: auto;
     float: right;
     margin-left: -55%;
-  }
+    box-shadow: -1px 15px 12px 0.1px black;
+    }
   
   .dropdown-content .header {
     padding: 16px;
@@ -194,6 +199,7 @@
     transform: rotate(45deg) translate(-8px, -8px) ;
   }
   .nav-container {
+    margin-top: 35%;
     display: inline-block;
     cursor: pointer;
   }

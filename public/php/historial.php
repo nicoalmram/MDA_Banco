@@ -4,8 +4,8 @@ include 'user_profile_header.php';
 ?>
 
 <html>
-<head><title>Mi perfil</title>
-    <link rel="stylesheet" type="text/css" href="../css/user_profile.css" />
+<head><title>Historial</title>
+    <link rel="stylesheet" type="text/css" href="../css/historial.css" />
 </head>
 <body>
 
@@ -29,34 +29,17 @@ include 'user_profile_header.php';
 ?>
 
 <div class="cust_profile_container">
-    <div class="acc_details">
-        <span class="heading">Detalles de la cuenta</span><br>
-        <select id="target">
-
-            <?php while($row2 = mysqli_fetch_array($res)):;?>
-            <?php $cuenta = $row2['name'];
-            $id_cuenta = $row2['ID'];
-            ?>
-
-            <?php echo "<option id='$id_cuenta'> $cuenta</option>";?>
-
-            <?php endwhile;?>
-
-        </select>
-        <label>Núm de Identificación : <?php echo $_SESSION['idnum']; ?></label>
-        <label>Nombre completo : <?php echo $_SESSION['fullname']; ?></label>
-        <label>Correo : <?php echo $_SESSION['email']; ?></label>
-        <label>Núm Telefono : <?php echo $phone; ?></label>
-        <label id="balance">Saldo disponible : <?php echo $balance; ?> €</label>
-    </div>
 
     <div class="statement">
         <label class="heading">Movimientos de la cuenta</label>
         <table>
             <th width="5%">#ID</th>
+            <th width="15%">Fecha</th>
             <th width="31%">Descripción</th>
             <th width="10%">Emisor</th>
+            <th width="10%">Cuenta emisor</th>
             <th width="10%">Receptor</th>
+            <th width="10%">Cuenta receptor</th>
             <th width="20%">Total</th>
             <?php
 
@@ -72,8 +55,11 @@ include 'user_profile_header.php';
                     echo '
             <tr>
                 <td>'.$Sl_no++.'</td>
+                <td>'.$row['date'].'</td>
                 <td>'.$row['concept'].'</td>
+                <td>'.$row['emisor'].'</td>
                 <td>'.$row['usuario_emisor'].'</td>
+                <td>'.$row['receptor'].'</td>
                 <td>'.$row['usuario_receptor'].'</td>
                 <td>€'.$row['amount'].'</td>
             </tr>';

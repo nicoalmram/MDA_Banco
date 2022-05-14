@@ -45,10 +45,9 @@ session_start();
              <div class="welcome">
 
              <label>Bienvenido <?php echo $_SESSION['fullname']; ?></label>
-             <a href="../../views/index.html" class="logo-container">
+             <a href="./index.php" class="logo-container">
               <img src="../images/bankLogo.png" alt="logo" class="logo-nav"></a>
              <div class="dropdown">
-             
             <button class="dropbtn" onclick="myFunction();equis(this)">
               <div class="nav-container">
                 <div class="bar1"></div>
@@ -95,11 +94,10 @@ session_start();
             <a href="user_detail.php"><li class="link1">Mi cuenta</li></a>
             <a href=""><li class="link2">Mi perfil</li></a>
             <a href="user_pass.php"><li class="link3">Cambiar contraseña</li></a>
-            <a href=""><li class="link4">Hacer transferencia</li></a>
-            <a href=""><li class="link5">Historial completo</li></a>
+            <a href="pretransferencias.php"><li class="link4">Hacer transferencia</li></a>
+            <a href="historial.php"><li class="link5">Historial completo</li></a>
             </ul>
         </div>
-        
           <script src="../js/nav.js"></script>
     </body>
     

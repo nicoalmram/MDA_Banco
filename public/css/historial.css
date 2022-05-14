@@ -1,0 +1,49 @@
+.cust_profile_container {
+    /* //background-color: wheat; */
+}
+.statement {
+    height: 90%;
+    width: 90%;
+    padding: 2%;
+    margin: 5%;
+    background-color: #E3E3FF;
+    float: left;
+    overflow: auto;
+    text-align: center;
+    border: 1px solid rgba(44, 78, 134, 0.3);
+}
+.statement .heading{
+    font-size: 2.3vh;
+}
+
+.statement table {
+    width: 100%;
+    margin: 1% auto;
+    /* //height: 2%; */
+    font-size: 2vh;
+    border-collapse: collapse;
+    border: 1px rgb(221, 221, 221);
+    /* //padding: 20px; */
+    text-align: center;
+
+}
+.statement table th {
+    color: white;
+    background-color: #005f7d;
+    border: 1px solid rgb(219, 219, 219);
+}
+
+.statement table tr:nth-child(even) {
+    background-color: #E3E3FF;
+}
+
+.statement table tr:nth-child(odd) {
+    background-color: #E3E3FF;
+}
+
+.statement table tr td {
+    border: 1px solid rgb(219, 219, 219);
+
+    padding: 1%;
+    height: 50px;
+}

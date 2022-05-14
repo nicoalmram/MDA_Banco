@@ -1,13 +1,20 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/nav.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
 <nav>
-        <div class="navbar">
-          <div class="dropdown">
+    <div class="navbar">
+        <div class="dropdown">
             <button class="dropbtn" onclick="myFunction();equis(this)">
-              <div class="nav-container">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-              </div>
-            </button>  
+                <div class="nav-container">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </button>
             <div class="dropdown-content" id="myDropdown">
               <div class="header">
                 <h2>Banco MDA</h2>
@@ -35,7 +42,6 @@
                   <a href="sobreNosostros.php">Más sobre nosotros</a>
                   <a href="terminosycondiciones.php">Términos y condiciones</a>
                 </div>
-              </div>
             </div>
           </div> 
           <?php
