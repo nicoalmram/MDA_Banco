@@ -6,6 +6,6 @@ include 'db_connect.php';
 session_destroy();
 session_unset();
 
-header('location:../../views/index.html');
+header('location:./index.php');
 
 ?>

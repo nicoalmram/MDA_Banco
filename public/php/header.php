@@ -16,24 +16,24 @@
                 <div class="column">
                     <lu class="column-header">
                       <div class="img-container">
-                          <img class="img" src="../public/images/clock.png" alt="bankLogo">
+                          <img class="img" src="../images/clock.png" alt="bankLogo">
                         </div>
                         <h3 style="display:inline-block; white-space:nowrap;">Mi día a día</h3>
                     </lu>
                   <a href="retiro.html">Retirar dinero</a>
-                  <a href="../public/php/user_isLoged.php">Mi perfil</a>
+                  <a href="./user_isLoged.php">Mi perfil</a>
                   <a href="pretransferencias.html">Realizar una transferencia</a>
                 </div>
                 <div class="column">
                     <lu class="column-header">
                         <div class="img-container">
-                            <img class="img" src="../public/images/bankLogo.png" alt="bankLogo">
+                            <img class="img" src="../images/bankLogo.png" alt="bankLogo">
                           </div>
                           <h3 style="display:inline-block; white-space:nowrap;">Conoce tu banco</h3>
                       </lu>
-                  <a href="divisaCalculator.html">Calculadora de divisas</a>
-                  <a href="sobreNosostros.html">Más sobre nosotros</a>
-                  <a href="terminosycondiciones.html">Términos y condiciones</a>
+                  <a href="divisaExchanger.php">Calculadora de divisas</a>
+                  <a href="sobreNosostros.php">Más sobre nosotros</a>
+                  <a href="terminosycondiciones.php">Términos y condiciones</a>
                 </div>
               </div>
             </div>
@@ -45,21 +45,21 @@
             if (isset($_SESSION['fullname'])) {
                 echo'<div class="login-container">
                 <label> '; echo $_SESSION['fullname']; echo'</label>
-                <a href="../public/php/user_logout.php" class="register-button"><i class="fa fa-fw fa-user"></i>Cerrar Sesión</a>
+                <a href="./user_logout.php" class="register-button"><i class="fa fa-fw fa-user"></i>Cerrar Sesión</a>
                 </div>';
             }else{
                     echo'<div class="login-container">
-                    <form method="post" action="../public/php/user_login.php">
+                    <form method="post" action="./user_login.php">
                         <input type="text" placeholder="DNI" name="idnum">
                         <input type="password" placeholder="Contraseña" name="psw">
                         <input type="submit" class="login-btn" name="login-btn"/>
-                        <a href=".../../views/register.html" class="register-button"><i class="fa fa-fw fa-user"></i>Registrarse</a>
+                        <a href="./register.php" class="register-button"><i class="fa fa-fw fa-user"></i>Registrarse</a>
                     </form>
                 </div>';
             }
           ?>
-          <a href="./index.html" class="logo-container">
-          <img src="../public/images/bankLogo.png" alt="logo" class="logo-nav"></a>
+          <a href="./index.php" class="logo-container">
+          <img src="../images/bankLogo.png" alt="logo" class="logo-nav"></a>
         </div>
       </nav>
-      <script src="../public/js/nav.js"></script>
+      <script src="../js/nav.js"></script>

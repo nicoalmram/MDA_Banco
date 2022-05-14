@@ -19,7 +19,7 @@ if(isset($_POST['login-btn'])){
 
     if($row <= 0){
         echo '<script>alert("Identificación/contraseña incorrecta.")
-                location="../../views/index.html"
+                location="./index.php"
                 </script>';
 
 

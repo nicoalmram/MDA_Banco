@@ -6,7 +6,7 @@ include 'db_connect.php';
         header('location:user_profile.php');
     }else{
         echo '<script>alert("Debe iniciar sesión previamente.")
-        location="../../views/index.html"
+        location="./index.php"
         </script>';
     }
 ?>

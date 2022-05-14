@@ -69,7 +69,7 @@ session_start();
                         <h3 style="display:inline-block; white-space:nowrap;">Mi día a día</h3>
                     </lu>
                   <a href="retiro.html">Retirar dinero</a>
-                  <a href="perfil.html">Cuenta</a>
+                  <a href="./user_isLoged.php">Mi perfil</a>
                   <a href="pretransferencias.html">Realizar una transferencia</a>
                 </div>
                 <div class="column">
@@ -79,7 +79,7 @@ session_start();
                           </div>
                           <h3 style="display:inline-block; white-space:nowrap;">Conoce tu banco</h3>
                       </lu>
-                  <a href="../../views/divisaCalculator.html">Calculadora de divisas</a>
+                  <a href="./divisaExchanger.php">Calculadora de divisas</a>
                   <a href="#">Más sobre nosotros</a>
                   <a href="terminosycondiciones.html">Términos y condiciones</a>
                 </div>

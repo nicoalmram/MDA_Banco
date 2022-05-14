@@ -4,9 +4,9 @@
         <meta charset="UTF-8">
         <title>Registrar</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-        <link rel="stylesheet" type="text/css" href="../public/css/register.css">
-        <link rel="stylesheet" href="../public/css/nav.css">
-        <link rel="stylesheet" href="../public/css/footer.css">
+        <link rel="stylesheet" type="text/css" href="../css/register.css">
+        <link rel="stylesheet" href="../css/nav.css">
+        <link rel="stylesheet" href="../css/footer.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
@@ -15,8 +15,8 @@
         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script>
             $(function () {
-                $('.nav').load("../public/php/header.php");
-                $('.footer').load("./footer.html");
+                $('.nav').load("./header.php");
+                $('.footer').load("./footer.php");
             });
         </script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,13 +25,13 @@
     <body>
 
     <div id="customheader">
-        <div id="left"><img src="../public/images/logo.png" alt="logo" class="register-img logo"></div>
+        <div id="left"><img src="../images/logo.png" alt="logo" class="register-img logo"></div>
         <div id="center"><h1>REGISTRATE</h1><br>Hazte cliente de nuestro banco ahora</div>
-        <div id="right"><img src="../public/images/ukraine.png" alt="donation" class="register-img donation"></div>
+        <div id="right"><img src="../images/ukraine.png" alt="donation" class="register-img donation"></div>
     </div>
 
     <div class="container">
-        <form class ="form" id="form" method="post" action="../public/php/user_reg.php">
+        <form class ="form" id="form" method="post" action="../php/user_reg.php">
 
             <div class="userdetails">
                 <div class="input-box">
@@ -86,12 +86,13 @@
             </div>
 
             <input type="submit" class="button" name="cnfrm-submit"/>
-            <p>¿Ya tienes una cuenta? <a href="../views/index.html">Inicia sesion</a></p>
+            <p>¿Ya tienes una cuenta? <a href="./index.php">Inicia sesion</a></p>
         </form>
     </div>
-    <script src="../public/js/regvalidation.js"></script>
+    <script src="../js/regvalidation.js"></script>
     <div class="footer"></div>
     </body>
+    
 
 
     

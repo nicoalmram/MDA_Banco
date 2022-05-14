@@ -2,9 +2,9 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Transferencia</title>
-    <link rel="stylesheet" href="../public/css/terminosycondiciones.css">
-    <link rel="stylesheet" href="../public/css/nav.css">
-    <link rel="stylesheet" href="../public/css/footer.css">
+    <link rel="stylesheet" href="../css/terminosycondiciones.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
@@ -12,8 +12,8 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
         $(function () {
-          $('.nav').load("../public/php/header.php");
-            $('.footer').load("./footer.html");
+          $('.nav').load("./header.php");
+            $('.footer').load("./footer.php");
         });
     </script>
   </head>

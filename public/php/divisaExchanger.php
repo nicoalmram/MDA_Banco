@@ -1,18 +1,18 @@
-  <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+  <html>
 
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Calculadora de divisas</title>
-    <link rel="stylesheet" href="../public/css/nav.css">
-    <link rel="stylesheet" href="../public/css/footer.css">
-    <link rel="stylesheet" href="../public/css/divisaCalculator.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/divisaCalculator.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script>
         $(function () {
-            $('.nav').load("../public/php/header.php");
-            $('.footer').load("./footer.html");
+            $('.nav').load("header.php");
+            $('.footer').load("./footer.php");
         });
     </script>
       
@@ -21,9 +21,9 @@
   <div class="nav"></div>
   <body>
     <div id="customheader">
-      <div id="left"><img src="../public/images/logo.png" alt="logo" class="divisa-img logo"></div>
+      <div id="left"><img src="../images/logo.png" alt="logo" class="divisa-img logo"></div>
       <div id="center"><h1>Calculadora de Divisas</h1></div>
-      <div id="right"><img src="../public/images/ukraine.png" alt="donation" class="divisa-img donation"></div>
+      <div id="right"><img src="../images/ukraine.png" alt="donation" class="divisa-img donation"></div>
   </div>
     <div class="container">
       <div class="divisaDetails">
@@ -53,7 +53,7 @@
         <input type="any" step="any" readonly id="showResult" placeholder="Dinero convertido">
       </div>
     </div>
-    <script src="../public/js/divisaExchanger.js"></script>
+    <script src="../js/divisaExchanger.js"></script>
   </body>
   <div class="footer"></div>
 </html>
