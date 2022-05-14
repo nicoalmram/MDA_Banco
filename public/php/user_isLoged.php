@@ -19,7 +19,7 @@
                 footer
             }).then(function (result) {
                 if (true) {
-                    window.location = "../../views/index.html";
+                    window.location = "./index.php";
                 }
             })
         }
