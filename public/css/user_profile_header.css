@@ -1,9 +1,8 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
+body{
+  overflow-x: hidden;
 
+  margin: 0;
+}
 .customer_details {
     margin: 20px 20px;
     float: left;
@@ -71,7 +70,7 @@
 .dropdown {
     float: right;
     overflow: hidden;
-    margin-top: -1.5rem;
+    margin-top: -1.5%;
   }
   
   .dropdown .dropbtn {
@@ -93,7 +92,8 @@
     height: auto;
     float: right;
     margin-left: -55%;
-  }
+    box-shadow: -1px 15px 12px 0.1px black;
+    }
   
   .dropdown-content .header {
     padding: 16px;
@@ -194,18 +194,8 @@
     transform: rotate(45deg) translate(-8px, -8px) ;
   }
   .nav-container {
+    margin-top: 35%;
     display: inline-block;
     cursor: pointer;
   }
   * {box-sizing:border-box}
-  .logo-container{
-    overflow: hidden;
-    align-items: center;
-    width: auto;
-    margin: auto auto auto 25rem;
-    vertical-align: middle;
-}
-.logo-nav{
-  width: auto;
-  height: 3rem;
-}

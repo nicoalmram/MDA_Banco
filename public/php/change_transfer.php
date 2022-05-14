@@ -6,5 +6,6 @@ $result2 = $conn->query($sql2);
 $row2 = $result2->fetch_assoc();
 
 $balance = $row2['balance'];
+$acc = $row2['name'];
 echo "$balance €";
 ?>

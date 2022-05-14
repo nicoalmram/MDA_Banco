@@ -8,4 +8,3 @@ session_unset();
 
 header('location:../../views/index.html');
 
-?>

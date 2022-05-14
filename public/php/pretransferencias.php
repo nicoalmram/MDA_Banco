@@ -39,7 +39,7 @@
     ?>
     <div class="center">
       <h1>Transferencia</h1>
-      <form class="form" method="Get" action="confirmation.php">
+      <form class="form" method="POST" action="confirmation.php">
         <table class="center-form">
           <tr>
             <td><h3>Nombre del titular</h3></td>
@@ -47,20 +47,7 @@
           </tr>
           <tr>
             <td><h3>Cuenta de origen</h3></td>
-            <td >
-              <select id="target">
-
-                <?php while($row2 = mysqli_fetch_array($res)):;?>
-                <<?php $cuenta = $row2['name'];
-                $id_cuenta = $row2['ID'];
-                ?>
-
-                <?php echo "<option id='$id_cuenta'> $cuenta</option>";?>
-
-                <?php endwhile;?>
-
-              </select>
-            </td>
+            <td ><input type=text name="transf_acc" id="transf_acc" placeholder="Nombre de cuenta" size="50"></td>
           </tr>
           <tr>
             <td><h3>Nombre del beneficiario</h3></td>
@@ -68,15 +55,19 @@
           </tr>
           <tr>
             <td><h3>Cuenta destino</h3></td>
-            <td><input type=text name="transf_acc" id="transf_acc" placeholder="Cuenta destino" size="50"></td>
+            <td><input type=text name="transf_acc2" id="transf_acc2" placeholder="Cuenta destino" size="50"></td>
           </tr>
           <tr>
             <td><h3>Cantidad a transferir</h3></td>
             <td ><input type=text name="transf_money" id="transf_money" placeholder="Cantidad a transferir" size="50"></td>
           </tr>
           <tr>
-            <td><h3>Saldo actual</h3></td>
-            <td ><label class="cuadro" name='balance' id="balance"><?php echo $balance; ?> €</label></td>
+            <td><h3>Fecha</h3></td>
+            <td ><input type=date name="date" id="date" placeholder="DD/MM/AAAA" size="50"></td>
+          </tr>
+          <tr>
+            <td><h3>Concepto</h3></td>
+            <td ><input type=text name="concept" id="concept" placeholder="Concepto" size="50"></td>
           </tr>
           <tr>
             <td><h3>Contraseña</h3></td>
