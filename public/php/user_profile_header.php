@@ -92,7 +92,7 @@ session_start();
         <div class="profile_nav">
         <ul>
             <a href="user_detail.php"><li class="link1">Mi cuenta</li></a>
-            <a href="user_detail.php"><li class="link2">Mi perfil</li></a>
+            <a href="new_account.php"><li class="link2">Crear cuenta nueva</li></a>
             <a href="user_pass.php"><li class="link3">Cambiar contraseña</li></a>
             <a href="pretransferencias.php"><li class="link4">Hacer transferencia</li></a>
             <a href="historial.php"><li class="link5">Historial completo</li></a>
