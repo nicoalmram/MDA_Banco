@@ -29,7 +29,7 @@ ob_start();
 session_start();
 include 'db_connect.php';
     if($_SESSION['user_login'] == true){
-        header('location:retiro.php');
+        header('location:user_extraction.php');
     }else{
         echo '<script type="text/javascript">'
         , 'alerta("¡Error!", "Debe iniciar sesión previamente",

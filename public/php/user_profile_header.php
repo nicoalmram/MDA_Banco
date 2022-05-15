@@ -96,6 +96,7 @@ session_start();
             <a href="user_pass.php"><li class="link3">Cambiar contraseña</li></a>
             <a href="pretransferencias.php"><li class="link4">Hacer transferencia</li></a>
             <a href="historial.php"><li class="link5">Historial completo</li></a>
+            <a href="user_extraction.php"><li class="link5">Sacar dinero</li></a>
             </ul>
         </div>
           <script src="../js/nav.js"></script>
