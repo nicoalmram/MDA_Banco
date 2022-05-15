@@ -1,10 +1,3 @@
-<html>
-
-<head>
-    <link rel="stylesheet" type="text/css" href="../css/nav.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-
 <nav>
     <div class="navbar">
         <div class="dropdown">
@@ -43,7 +36,9 @@
                   <a href="logged_terms.php">Términos y condiciones</a>
                 </div>
             </div>
-          </div> 
+          </div>
+          <a href="./index.php" class="logo-container"><img src="../images/bankLogo.png" alt="logo" class="logo-nav"></a>
+         
           <?php
             ob_start();
             session_start();
@@ -64,8 +59,6 @@
                 </div>';
             }
           ?>
-          <a href="./index.php" class="logo-container">
-          <img src="../images/bankLogo.png" alt="logo" class="logo-nav"></a>
-        </div>
+          </div>
       </nav>
       <script src="../js/nav.js"></script>

@@ -12,16 +12,13 @@
   }
   
   .navbar a {
-    float: left;
     font-size: 16px;
     color: white;
     text-align: center;
-
     text-decoration: none;
   }
   
   .dropdown {
-    float: left;
     overflow: hidden;
   }
   
@@ -79,13 +76,13 @@
     margin-right: auto;
 }
 .logo-container{
-    margin: auto auto auto 25rem;
-    padding: 5px;
-    height: 60px;
-    overflow: hidden;
-    align-items: center;
-    width: auto;
-    vertical-align: middle;
+  margin: 0.5rem auto auto 24rem;
+  padding: 0;
+  height: 3.5rem;
+  overflow: hidden;
+  align-items: center;
+  width: auto;
+  display: inline-block;
 }
 .logo-nav{
   width: auto;
@@ -168,9 +165,10 @@
   }
 
   .login-container{
+    vertical-align: middle;
     justify-content: center;
     align-items: center;
-    margin-top: 25px;
+    margin-top: 2rem;
     float: right;
     margin-right: 3rem;
   }
