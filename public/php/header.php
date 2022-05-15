@@ -27,9 +27,9 @@
                         </div>
                         <h3 style="display:inline-block; white-space:nowrap;">Mi día a día</h3>
                     </lu>
-                  <a href="retiro.html">Retirar dinero</a>
+                  <a href="logged_retiro.php">Retirar dinero</a>
                   <a href="./user_isLoged.php">Mi perfil</a>
-                  <a href="pretransferencias.html">Realizar una transferencia</a>
+                  <a href="./logged_trans.php">Realizar una transferencia</a>
                 </div>
                 <div class="column">
                     <lu class="column-header">
@@ -38,9 +38,9 @@
                           </div>
                           <h3 style="display:inline-block; white-space:nowrap;">Conoce tu banco</h3>
                       </lu>
-                  <a href="divisaExchanger.php">Calculadora de divisas</a>
-                  <a href="sobreNosostros.php">Más sobre nosotros</a>
-                  <a href="terminosycondiciones.php">Términos y condiciones</a>
+                  <a href="logged_divisa.php">Calculadora de divisas</a>
+                  <a href="logged_aboutus.php">Más sobre nosotros</a>
+                  <a href="logged_terms.php">Términos y condiciones</a>
                 </div>
             </div>
           </div> 

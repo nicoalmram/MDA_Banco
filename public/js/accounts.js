@@ -11,7 +11,7 @@ $( document ).ready(function() {
 function llamada(data){
     jQuery.ajax({
           type: "POST",
-          url: "../php/change_transfer.php",
+          url: "../php/change_balance.php",
           type: 'post',
           data: data,
           success: function(e)

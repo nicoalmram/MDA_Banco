@@ -44,8 +44,9 @@ include 'user_profile_header.php';
             <?php
 
             $cust_id = $_SESSION['idnum'];
+            $ses_name = $_SESSION['fullname'];
 
-            $sql = "SELECT * from transactions ORDER By id DESC LIMIT 10";
+            $sql = "SELECT * from transactions WHERE usuario_emisor = '$ses_name' ORDER By id DESC LIMIT 10";
             $result = $conn->query($sql);
             if ($result->num_rows > 0) {
                 $Sl_no = 1;
